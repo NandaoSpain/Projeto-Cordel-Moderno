@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Roboto:ital@1&family=Sarala&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,10 +21,16 @@ header {
 header h1 {
     padding: 50px;
     font-variant: small-caps;
+    font-family: 'Righteous';
+    font-size: 4em;
+    font-weight: 100;
 }
 
 header p {
     padding-bottom: 50px;
+    font-family: 'Righteous';
+    font-weight: 100;
+    font-size: 1.2em;
 }
 
 a {
@@ -40,6 +48,22 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 1.5em;
+    font-family: 'Roboto';
+    font-size: 1.7em;
+}
+
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+    
+}
+
+section.imagem p {
+    background-color: aqua;
+    
+}
+
+section > p {
+    padding-bottom: 2em; 
 }
 
 .normal {
@@ -47,8 +71,22 @@ section {
     color: black;
 }
 
-.imagem {
-    
+.imagem#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imagem#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 footer {
